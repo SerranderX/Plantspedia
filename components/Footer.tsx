@@ -64,19 +64,6 @@ export const Footer = ({ className }: { className?: string }) => {
             </div>
           </Grid>
         </Grid>
-        <div className="mt-20 border-t-2 border-gray-600 text-gray-600 pt-6 flex justify-between">
-          <p>
-            Images from
-            <a target="_blank" href="https://www.pexels.com" title="Pexels">
-              Pexels
-            </a>
-          </p>
-          <p>
-            <a target="_blank" href="https://jonalvarezz.com">
-              jonalvarezz.com
-            </a>
-          </p>
-        </div>
       </div>
     </footer>
   )
