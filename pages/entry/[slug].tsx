@@ -13,6 +13,8 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PlantEntryInline } from '@components/PlantCollection'
 import Link from 'next/link'
 import { useRouter } from 'next/dist/client/router'
+import { grey } from '@material-ui/core/colors'
+import { ImageContentfull } from '@components/ImageContentfull'
 
 type PlantEntriesProps = {
   plant: Plant
@@ -85,7 +87,7 @@ export default function PlantEntryPage({
           <Grid container spacing={4}>
             <Grid item xs={12} md={8} lg={9} component="article">
               <figure>
-                <img />
+              <ImageContentfull layout="responsive" src={plant.image.url} width={460} className="rounded-t-lg" aspectRatio='4:3' fit="fill" />
               </figure>
               <div className="px-12 pt-8">
                 <Typography variant="h2">{plant?.plantName}</Typography>
@@ -111,7 +113,7 @@ export default function PlantEntryPage({
                 </Typography>
                 <ul className="list">
                   {categories?.map((categorie) => (
-                    <li key={categorie.id}>
+                    <li key={categorie.id} style={{backgroundColor: 'grey', cursor: 'pointer', padding: '1em'}}>
                       <Link href={`/category/${categorie.slug}`}>
                         <Typography component="a" variant="h6">
                           {categorie.title}

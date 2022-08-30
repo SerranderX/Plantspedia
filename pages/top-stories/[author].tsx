@@ -27,7 +27,6 @@ export const getServerSideProps: GetServerSideProps<TopStoriesPageProps> =
         (author) => author.handle === authorHandle
       )
 
-      // Validates that the author exists and redirects to the first one in the list otherwise.
       if (authors.length > 0 && !doesAuthorExist) {
         const firstAuthor = authors[0].handle
 
