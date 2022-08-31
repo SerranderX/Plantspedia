@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { Typography } from '@ui/Typography'
+import { ImageContentfull } from './ImageContentfull'
 
 type HeroProps = Plant & { className?: string }
 
@@ -7,12 +8,12 @@ export function Hero({ plantName, slug, image, className }: HeroProps) {
   return (
     <div className={className}>
       <div className="relative text-center">
-        <div className="opacity-60 inline-block">
-          <img src={image.url} width={600} />
-        </div>
-        <div className="text-container absolute">
-          <Link href={`/entry/${slug}`}>
-            <a title={`Go to ${plantName}`}>
+        <Link href={`/entry/${slug}`}>
+          <a title={`Go to ${plantName}`}>
+            <div className="opacity-70 inline-block">
+              <ImageContentfull src={image.url} layout="intrinsic" width={1200} className="rounded-lg shadow-xl" aspectRatio='16:9' fit="fill" />
+            </div>
+            <div className="text-container absolute">
               <Typography
                 variant="h1"
                 component="h2"
@@ -20,9 +21,9 @@ export function Hero({ plantName, slug, image, className }: HeroProps) {
               >
                 {plantName}
               </Typography>
-            </a>
-          </Link>
-        </div>
+            </div>
+          </a>
+        </Link>
       </div>
 
       <style jsx>{`

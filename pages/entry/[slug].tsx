@@ -113,7 +113,7 @@ export default function PlantEntryPage({
                 </Typography>
                 <ul className="list">
                   {categories?.map((categorie) => (
-                    <li key={categorie.id} style={{backgroundColor: 'grey', cursor: 'pointer', padding: '1em'}}>
+                    <li key={categorie.id} className="m-1 p-2 hover:bg-green-100 cursor-pointer rounded-lg transition delay-50 duration-100 ease-in-out">
                       <Link href={`/category/${categorie.slug}`}>
                         <Typography component="a" variant="h6">
                           {categorie.title}

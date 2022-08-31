@@ -19,6 +19,7 @@
     "preserveConstEnums": true,
     "baseUrl": ".",
     "paths": {
+      "@pages/*": ["pages/*"],
       "@ui/*": ["ui/*"],
       "@api/*": ["api/*"],
       "@api": ["api/index.ts"],
