@@ -13,7 +13,6 @@ import { GetStaticProps, InferGetStaticPropsType } from 'next'
 import { PlantEntryInline } from '@components/PlantCollection'
 import Link from 'next/link'
 import { useRouter } from 'next/dist/client/router'
-import { grey } from '@material-ui/core/colors'
 import { ImageContentfull } from '@components/ImageContentfull'
 
 type PlantEntriesProps = {
