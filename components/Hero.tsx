@@ -10,8 +10,8 @@ export function Hero({ plantName, slug, image, className }: HeroProps) {
       <div className="relative text-center">
         <Link href={`/entry/${slug}`}>
           <a title={`Go to ${plantName}`}>
-            <div className="opacity-70 inline-block">
-              <ImageContentfull src={image.url} layout="intrinsic" width={1200} className="rounded-lg shadow-xl" aspectRatio='16:9' fit="fill" />
+            <div className="opacity-60 hover:opacity-70 inline-block">
+              <ImageContentfull src={image.url} layout="intrinsic" width={900} className="rounded-lg shadow-xl" aspectRatio='16:9' fit="fill" />
             </div>
             <div className="text-container absolute">
               <Typography
@@ -30,7 +30,7 @@ export function Hero({ plantName, slug, image, className }: HeroProps) {
         .text-container {
           top: 50%;
           transform: translateY(-50%);
-          max-width: 400px;
+          max-width: 600px;
           left: 3vh;
         }
 
@@ -43,8 +43,8 @@ export function Hero({ plantName, slug, image, className }: HeroProps) {
 
         @media screen and (min-width: 1300px) {
           .text-container {
-            max-width: 600px;
-            left: 15vh;
+            max-width: 800px;
+            left: 18vh;
           }
         }
       `}</style>
