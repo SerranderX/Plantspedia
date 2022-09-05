@@ -17,7 +17,7 @@ export default function Home() {
                 href={doc.link}
                 target="_blank"
                 title={doc.title}
-                className="p-4 border-2 border-gray-300 block hover:border-green-500 transition transition-colors duration-500"
+                className="p-4 border-2 border-gray-300 block hover:border-green-500 transition duration-500 transition-colors"
               >
                 <Typography variant="h5" className="mb-2">
                   {doc.title}
