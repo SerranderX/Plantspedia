@@ -3,6 +3,7 @@ module.exports = {
     './pages/**/*.{ts,tsx}',
     './ui/**/*.{ts,tsx}',
     './components/**/*.{ts,tsx}',
+    './containers/**/*.{ts,tsx}',
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
