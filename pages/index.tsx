@@ -10,9 +10,9 @@ type HomeProps = {
     authors: Author[]
 }
 
-export const getStaticProps: GetStaticProps<HomeProps> = async () => {
-    const responsePlants = await getPlantList({ limit: 6 });
-    const responseAuthors = await getAuthorList({limit: 4});
+export const getStaticProps: GetStaticProps<HomeProps> = async ({ locale }) => {
+    const responsePlants = await getPlantList({ limit: 6, locale });
+    const responseAuthors = await getAuthorList({limit: 4 });
 
     return {
         props: {

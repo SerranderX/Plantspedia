@@ -69,7 +69,7 @@ export default function Posts({ plants, cantidadPaginas }: InferGetStaticPropsTy
             <section className='border-solid border-t-4 border-b-4 border-purple-300 pt-4'>
                 <PlantCollection plants={plantsClient} variant={'vertical'} />
             </section>
-                <PaginationHandler handleLeftButton={handleLeftButton} handleRightButton={handleRightButton} totalPages={cantidadPaginas} actualPage={page} goToPage={goToPage}/>
+            <PaginationHandler handleLeftButton={handleLeftButton} handleRightButton={handleRightButton} totalPages={cantidadPaginas} actualPage={page} goToPage={goToPage}/>
         </Layout>
     );
 };
