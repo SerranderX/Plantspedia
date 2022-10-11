@@ -33,7 +33,7 @@ export default function Search() {
   const emptyResults = status === 'success' && results.length === 0
 
   useEffect(() => {
-    if (term.trim().length < 3) {
+    if (term.trim().length < 1) {
       setStatus('idle')
       setResults([])
       return
