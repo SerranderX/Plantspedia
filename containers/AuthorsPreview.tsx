@@ -10,8 +10,8 @@ type AuthorsPreviewProps = {
 export const AuthorsPreview: React.FC<AuthorsPreviewProps> = ({authors}) => {
 
     return (
-        <>
-            <Typography variant="h2" component="h2" className="mt-2 mb-1">
+        <div className="mt-6">
+            <Typography variant="h3" component="h3" className="mt-2 mb-1">
                 Top authors
             </Typography>
             <div className="grid gap-x-1 grid-cols-2 sm:grid-cols-4 pb-4 pt-2 border-solid border-t-4 border-purple-300 content-center">
@@ -33,11 +33,13 @@ export const AuthorsPreview: React.FC<AuthorsPreviewProps> = ({authors}) => {
             </div>
             <div className="text-right px-8 h-full flex justify-center sm:justify-end mb-4">
                 <Link href={`/top-stories`}>
-                    <a title={`See top stories`} className="rounded-lg py-2 px-4 bg-purple-800 text-gray-100 text-2xl">
-                        See top stories
+                    <a title={`See top stories`} className="rounded-lg py-2 px-4 bg-purple-800 text-gray-100">
+                        <Typography variant="button" display="block" gutterBottom className="text-xl mb-0">
+                            See top stories
+                        </Typography>
                     </a>
                 </Link>
             </div>
-        </>
+        </div>
     );
 };
