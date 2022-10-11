@@ -17,7 +17,7 @@ export function PlantCollection({
   className,
 }: PlantCollectionProps) {
   return (
-    <Grid container component="ul" spacing={4} className={`${className} mb-4`}>
+    <Grid container component="ul" spacing={4} className={`${className} mb-4 `}>
       {plants.map((plant) => (
         <PlantEntry key={plant.id} plant={plant} variant={variant} />
       ))}
@@ -53,7 +53,7 @@ export function PlantEntrySquare({ image, plantName, slug }: Plant) {
   return (
     <Link href={`/entry/${slug}`}>
       <a title={`Go to ${plantName}`}>
-        <div className="opacity-95 hover:opacity-100 rounded-lg bg-green-100 min-h-full">
+        <div className="opacity-90 hover:opacity-100 rounded-lg bg-green-100 min-h-full transition delay-100 duration-100 ease-in-out">
           <ImageContentfull layout="responsive" src={image.url} width={460} className="rounded-t-lg" aspectRatio='4:3' fit="fill" />
           <div className="p-4 min-h-full">
             <Typography variant="h4" className="break-words">

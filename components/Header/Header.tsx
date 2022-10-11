@@ -18,8 +18,9 @@ export function Header() {
       </div>
       <div className="mx-auto" style={{ maxWidth: '98%' }}>
         <NavBar title="🌿 Plantpedia">
-          <div>
+          <div className="flex gap-x-3">
             <NavLink href="/top-stories">{t('topStories')}</NavLink>
+            <NavLink href="/search">{t('search')}</NavLink>
           </div>
         </NavBar>
       </div>
@@ -30,7 +31,7 @@ export function Header() {
 function NavLink({ children, ...linkProps }: PropsWithChildren<LinkProps>) {
   return (
     <Link {...linkProps} passHref>
-      <Button color="inherit" variant="text" component="a">
+      <Button color="inherit" variant="text" component="a" className='transition delay-100 duration-200 ease-in-out'>
         {children}
       </Button>
     </Link>

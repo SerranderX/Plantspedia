@@ -31,7 +31,7 @@ export const AuthorsPreview: React.FC<AuthorsPreviewProps> = ({authors}) => {
                 }
                 )}
             </div>
-            <div className="text-right px-2 h-full flex justify-center sm:justify-end mb-4">
+            <div className="text-right px-8 h-full flex justify-center sm:justify-end mb-4">
                 <Link href={`/top-stories`}>
                     <a title={`See top stories`} className="rounded-lg py-2 px-4 bg-purple-800 text-gray-100 text-2xl">
                         See top stories

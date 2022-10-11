@@ -25,7 +25,7 @@ export const Layout: React.FC<LayoutProps> = ({ children, title }) => {
       </Head>
       <Header />
       <div className="local-container container mx-auto max-w-screen-xl w-95">
-        <main className="pt-16 text-center">{children}</main>
+        <main className="pt-10 text-center">{children}</main>
       </div>
       <Footer className="absolute bottom-0 inset-x-0" />
 

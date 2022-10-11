@@ -6,7 +6,7 @@ export const Footer = ({ className }: { className?: string }) => {
   return (
     <footer
       className={clsx(
-        'pt-20 pb-6 bg-green-900 text-gray-300 overflow-hidden',
+        'pt-10 pb-10 bg-green-900 text-gray-300 overflow-hidden',
         className
       )}
     >
@@ -29,9 +29,6 @@ export const Footer = ({ className }: { className?: string }) => {
             </Typography>
             <ul className="p0">
               <li className="pb-1">
-                <a href="/getting-started">Getting started</a>
-              </li>
-              <li className="pb-1">
                 <a href="/search">Search</a>
               </li>
               <li className="pb-1">
@@ -44,8 +41,11 @@ export const Footer = ({ className }: { className?: string }) => {
               About
             </Typography>
             <p>
-              <a href="#">This site was made with NextJS</a>{' '}
-              <a href="https://twitter.com/SerranderX">@Serranderx</a>
+              This site was made with NextJS based in the project made by:{' '}
+              <a href="https://twitter.com/jonalvarezz" className="italic hover:underline transition delay-200 duration-200 ease-in-out">@jonalvarezz</a>
+              <br/>
+              and modified by:{' '}
+              <a href="https://twitter.com/SerranderX" className="italic hover:underline transition delay-200 duration-200 ease-in-out">@Serranderx</a>
             </p>
             <div className="mt-3">
               <a

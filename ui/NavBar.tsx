@@ -15,7 +15,7 @@ export function NavBar({ title, children }: Props) {
       position="static"
       color="transparent"
       elevation={0}
-      className="border-b-2 border-t-2 border-purple-600"
+      className="border-b-2 border-t-2 border-purple-400"
     >
       <Toolbar>
         <PlantpediaNoLoVeniasVenirLogo title={title} />
