@@ -17,7 +17,7 @@ export function Header() {
         <TopArea />
       </div>
       <div className="mx-auto" style={{ maxWidth: '98%' }}>
-        <NavBar title="🌿 Plantpedia">
+        <NavBar title="🌿 Plantpedia - ⚠️ Under construction ⚠️">
           <div className="flex gap-x-3">
             <NavLink href="/top-stories">{t('topStories')}</NavLink>
             <NavLink href="/search">{t('search')}</NavLink>
