@@ -11,7 +11,7 @@ export function PreviewModeBanner() {
     const [isEnabled, setIsEnabled] = useState<boolean>(false);
 
     useEffect(() => {
-        try{
+        try {
             fetch('/api/preview/status')
             .then(response => response.json())
             .then((data: PreviewStatusResponse) => {
